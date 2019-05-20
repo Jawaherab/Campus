@@ -1,5 +1,9 @@
 <%= form_for @author, url: {action: "update"} do |f| %>
+    <h4> First name </h4>
     <%= f.text_field :First_name %>
+    <h4> Last name </h4>
     <%= f.text_field :Last_name %>
+    <h4> Nickname </h4>
+    <%= f.text_field :nickname %>
     <%= f.submit "Save" %>
 <% end %>
