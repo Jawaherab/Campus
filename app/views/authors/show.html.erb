@@ -1,0 +1,7 @@
+<p> <%= link_to "Back", authors_path %> </p> 
+
+<h1>   <%= @author.First_name %> </h1>
+<p>  <%= @author.Last_name %> </p>
+
+<%= link_to "edit" , edit_author_path(@author) %>
+<p> <%= link_to "Delete Author" , author_path(@author), method: :delete %></p>

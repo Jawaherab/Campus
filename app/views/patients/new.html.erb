@@ -1,0 +1,12 @@
+<%= form_for @patient, url: {action: "create"} do |f| %>
+    <h6> First Name</h6>
+    <%= f.text_field :first_name %>
+    <h6>Last Name</h6>
+    <%= f.text_field :last_name %>
+    <h6>Diagnosis</h6>
+    <%= f.text_field :diagnosis %>
+    <h6>Born on</h6>
+    <%= f.date_field :born_on %>
+     <br>
+    <%= f.submit "Save" %>
+<% end %>

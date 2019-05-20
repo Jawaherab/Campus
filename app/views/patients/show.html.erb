@@ -1,0 +1,5 @@
+<h3> <%= @patient.first_name %>   <%= @patient.last_name %>  </h3>
+
+<p> <%= @patient.diagnosis %> <%= @patient.born_on %>   </h3>
+
+<p> <%= link_to "Delete Patient" , patient_path(@patient), method: :delete %></p>
