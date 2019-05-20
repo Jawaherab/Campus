@@ -1,12 +1,16 @@
-<h1> BOOKS </h1>
 
-<%= link_to 'Add a book' , new_book_path %>
-<% @books.each do |book|%>
+<p> <%= link_to "Back", author_path(@author) %> </p>
 
+<h1><%=@author.First_name %>'s Books</h1>
 
-<h3> <%= link_to book.title, book_path(book) %> </h3>
+<h2>
+    <%= link_to 'Create a book', new_author_book_path(@author) %>
+</h2>
 
+<% @books.each do |book| %>
 
+    <h3>
+        <%= link_to book.title, author_book_path(@author, book) %>
+    </h3>
 
 <% end %>
-

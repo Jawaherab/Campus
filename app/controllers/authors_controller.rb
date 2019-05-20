@@ -24,6 +24,7 @@ class AuthorsController < ApplicationController
         redirect_to authors_path
      end
 
+
      def edit
         @author = Author.find(params[:id])
      end
@@ -36,7 +37,7 @@ class AuthorsController < ApplicationController
      end
 
      def author_params
-        params.require(:author).permit(:First_name, :Last_name ,:nickname)
+        params.require(:author).permit(:First_name, :Last_name ,:nickname , :hometown , :age)
      end
 
 end

@@ -1,8 +1,13 @@
 <p> <%= link_to "Back", authors_path %> </p> 
 
-<h1>   <%= @author.First_name %> </h1>
-<p>  <%= @author.Last_name %> </p>
-<p>  <%= @author.nickname %> </p>
+<h1> First Name :  <%= @author.First_name %> </h1>
+<p> Last Name : <%= @author.Last_name %> </p>
+<p> Nickname : <%= @author.nickname %> </p>
+<p> Hometown : <%= @author.hometown %> </p>
+<p> Age : <%= @author.age %> </p>
+
+<p> <%= link_to 'View Books', author_books_path(@author) %> </p>
+
 
 <%= link_to "edit" , edit_author_path(@author) %>
 <p> <%= link_to "Delete Author" , author_path(@author), method: :delete %></p>

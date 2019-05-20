@@ -1,5 +1,13 @@
 
 <%= form_for @book, url: {action: "update"} do |f| %>
+    <h3> Title Of Book</h3>
     <%= f.text_field :title %>
+    <h3> Print Date</h3>
+    <%= f.date_field :print_date %>
+    <h3> Original Language</h3>
+    <%= f.text_field :original_language %>
+
+
+    
     <%= f.submit "Save" %>
 <% end %>
